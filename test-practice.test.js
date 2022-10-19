@@ -31,6 +31,12 @@ describe('Calculator addition Method', () => {
   test('adding 10 and 5', () =>{
     expect(cal.add(10,5)).toBe(15);
   });
+  test('adding 3 and 3', () =>{
+    expect(cal.add(3,3)).toBe(6);
+  })
+  test('adding 0.5 and 0.5', ()=>{{
+    expect(cal.add(0.5,0.5)).toBe(1);
+  }})
 });
 
 
