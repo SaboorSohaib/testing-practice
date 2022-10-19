@@ -39,6 +39,18 @@ describe('Calculator addition Method', () => {
   }})
 });
 
+describe('Calculator subtraction Method', () => {
+  test('subtracting 1 from 5', () =>{
+    expect(cal.subtract(5,1)).toBe(4);
+  });
+  test('subtracting 2 from 1', () =>{
+    expect(cal.subtract(1,2)).toBe(-1);
+  })
+  test('subtracting 3 from 3', ()=>{{
+    expect(cal.subtract(3,3)).toBe(0);
+  }})
+});
+
 
 describe('Capital String Method', () => {
   test('"hi" becomes "Hi"', () => {
