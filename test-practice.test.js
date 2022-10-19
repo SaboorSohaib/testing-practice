@@ -51,6 +51,17 @@ describe('Calculator subtraction Method', () => {
   }})
 });
 
+describe('Calculator Multiplication Method', () => {
+  test('Multiplying 2 by 5', () =>{
+    expect(cal.Multiply(2,5)).toBe(10);
+  });
+  test('Multiplying 3 by 1', () =>{
+    expect(cal.Multiply(3,1)).toBe(3);
+  })
+  test('Multiplying 0 by 5', ()=>{{
+    expect(cal.Multiply(0,5)).toBe(0);
+  }})
+});
 
 describe('Capital String Method', () => {
   test('"hi" becomes "Hi"', () => {
