@@ -63,6 +63,18 @@ describe('Calculator Multiplication Method', () => {
   }})
 });
 
+describe('Calculator Division Method', () => {
+  test('Dividing 4 by 2', () =>{
+    expect(cal.Divide(4,2)).toBe(2);
+  });
+  test('Dividing 10 by 5', () =>{
+    expect(cal.Divide(10,5)).toBe(2);
+  });
+  test('Dividing 4 by 0', () =>{
+    expect(cal.Divide(4,0)).toBe(Infinity);
+  });
+});
+
 describe('Capital String Method', () => {
   test('"hi" becomes "Hi"', () => {
     expect(capitalString('hi')).toBe('Hi');
